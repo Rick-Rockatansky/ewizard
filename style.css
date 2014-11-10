@@ -7,6 +7,7 @@
 .contents, footer, article, .videoCont {
 	background: #E6E6E6;
 	border: 1px solid #CFCFCF;
+	border-radius: 3px;
 }
 header a:first-child img {
 	margin: 18px 0 0 40px;
@@ -46,9 +47,6 @@ h2 {
 .contents img {
 	width: 11px;	
 }
-.contents a {
-	font-weight: bold;
-}
 .contents > ul > li {
 	list-style: none;
 	margin-top: 5px;	
@@ -58,6 +56,15 @@ h2 {
 }
 .contents ol li a {
 	color: black;
+}
+#interfaceNav li {
+	list-style: none;
+	margin-bottom: 10px;	
+}
+#interfaceNav li img {
+	position: relative;
+	top: 8px;
+	margin-right: 10px;
 }
 .container a {
 	text-decoration: none;
@@ -85,6 +92,13 @@ a div {
 	width: 13px;
 	height: 11px;
 	background-size: 13px 11px;	
+}
+.film {
+	background: url('images/film.png');
+	width: 30px;
+	height: 30px;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
 }
 article {
 	margin-bottom: 40px;
