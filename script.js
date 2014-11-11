@@ -38,9 +38,14 @@ window.onload = function() {
 
 
 var c = document.getElementById('contInterface');
+var d = document.getElementById('contCreate');
 
 c.onclick = function() {
 		c.nextElementSibling.classList.toggle('hide');
 		c.children[0].classList.toggle('down');
-	};	
+	};
+
+d.onclick = function() {
+	d.nextElementSibling.classList.toggle('hide');
+	};
 };
