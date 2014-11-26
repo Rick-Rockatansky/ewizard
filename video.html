@@ -4,43 +4,115 @@
 	<meta charset="UTF-8">
 	<title>Видеоролики</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<script src="jquery.js"></script>
 </head>
 <body>
 	<div class="container">
-		<header>
+		<header id="header">
 			<a title="Назад к порталу" href="https://demo.ewizard-detailing.com"><img src="images/1.png"></a>
 			<a><img src="images/2.png"></a>
 		</header>
-		<h1>Руководство пользователя</h1>
-		<h2>Видеоролики</h2>
-		<div class="videoCont">
+		<h1>eWizard Online: видео</h1>
+		<h2>Список видеороликов</h2>
+		<div class="videoCont" id="videoCont">
 			<ol>
-				<li><a href="#sugarRay">Sugar Ray Robinson</a></li>
-				<li><a href="#michaelPage">Michael Page</a></li>
-				<li><a href="#knopfler">Mark Knopfler - Song For Sonny Liston</a></li>
+				<li><a href="#videoPresentationView">Просмотр презентации</a></li>
+				<li><a href="#videoPresentationCreate">Создание шаблонной презенации</a></li>
+				<li><a href="#videoEditSlide">Редактирование отдельных слайдов</a></li>
+				<li><a href="#videoImagesFonts">Загрузка изображений и изменение размера шрифта</a></li>
+				<li><a href="#videoReferencesDesign">Добавление ссылок и дизайна к тексту слайда</a></li>
+				<li><a href="#videoGraphs">Редактирование графиков</a></li>
+				<li><a href="#videoTemplates">Создание презентации в разделе шаблоны</a></li>
+				<li><a href="#videoScenarios">Создание сценариев</a></li>
+				<li><a href="#videoUpload">Загрузка презентации в инструмент</a></li>
+				<li><a href="#videoExportPublishing">Экспорт и паблишинг</a></li>
+				<li><a href="#videoDemo">Создание обучающей презентации (Демо-режим)</a></li>
+				<li><a href="#videoLocalize">Локализация презентаций</a></li>
+				<li><a href="#videoShare">Обмен презентациями (Share)</a></li>				
 			</ol>
 			<a href="index.html">&#171; Назад к руководству</a>
-		</div>
+		</div>		
 		<main class="video">
 			<article id="sugarRay">
-				<h3>Sugar Ray Robinson</h3>
-				<iframe width="560" height="315" src="http://www.youtube.com/embed/5VLWBVpL23k" frameborder="0" allowfullscreen></iframe>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse fugiat aspernatur error dolorum numquam voluptas dolorem, possimus quia aut mollitia enim. Labore dolore, laboriosam ducimus quibusdam libero dignissimos assumenda.</p>
-				<p>Tempora, cum harum, nesciunt rerum error iure, dolorum tempore veniam repellat quam inventore tenetur asperiores, totam veritatis mollitia quod delectus omnis nulla.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>						
+				<h3 id="videoPresentationView">Просмотр презентации</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/sMBhXx8qnvM" frameborder="0" allowfullscreen></iframe>	
+				<p>Данный видеоролик демонстрирует процесс просмотра презентаций, а так же выбора режима просмотра в зависимости от устройства.</p>
+				<a href="index.html#view"<p><b>&#171; Перейти к статье</b></p></a>										
 			</article>
 			<article id="michaelPage">
-				<h3>Michael Page</h3>				
-				<iframe width="560" height="315" src="http://www.youtube.com/embed/HSrY8JKrp3g" frameborder="0" allowfullscreen></iframe>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempora vero unde nemo minus, accusamus amet voluptatem quas autem commodi, sint dolorum a distinctio! Perferendis non consectetur repellendus laborum sint?</p>
+				<h3 id="videoPresentationCreate">Создание шаблонной презенации</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/r0dk-PqEZYM" frameborder="0" allowfullscreen></iframe>
+				<p>В данном ролике демонстрируется процесс создания швблонной презентации.</p>
+				<a href="index.html#createTemplate"<p><b>&#171; Перейти к статье</b></p></a>
 			</article>
 			<article id="knopfler">
-				<h3>Mark Knopfler - Song For Sonny Liston</h3>
-				<iframe width="560" height="315" src="http://www.youtube.com/embed/VyOW8lQOG8Q" frameborder="0" allowfullscreen></iframe>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse fugiat aspernatur error dolorum numquam voluptas dolorem, possimus quia aut mollitia enim. Labore dolore, laboriosam ducimus quibusdam libero dignissimos assumenda.</p>
-				<p>Tempora, cum harum, nesciunt rerum error iure, dolorum tempore veniam repellat quam inventore tenetur asperiores, totam veritatis mollitia quod delectus omnis nulla.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<h3 id="videoEditSlide">Редактирование слайдов</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/M8w5VmGT76E" frameborder="0" allowfullscreen></iframe>
+				<p>В данном ролике демонстрируется процесс редактирования отдельных слайдов презентации.</p>
+				<a href="index.html#editTemplate"<p><b>&#171; Перейти к статье</b></p></a>
 			</article>
+			<article>
+				<h3 id="videoImagesFonts">Загрузка изображений и изменение размера шрифта</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/UdeBlby1LDc" frameborder="0" allowfullscreen></iframe>
+				<p>В данном ролике рассматривается процесс редактирования изображений на слайдах презентации а так же изменения размера шрифтов.</p>
+				<a href="index.html#editTemplate"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoReferencesDesign">Ссылки и дизайн</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/Re0bdxSPvq8" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеороике демонстрируется процесс добавления ссылок и дизайна к тексту презентации.</p>
+				<a href="index.html#editTemplate"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoGraphs">Редактирование графиков</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/m8X9G-agOaA" frameborder="0" allowfullscreen></iframe>
+				<p>Данный видеоролик демонстрирует процесс редактирования графиков на слайдах презентаций.</p>
+				<a href="index.html#editGraph"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoTemplates">Раздел "Шаблоны" (Templates)</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/jTURCJnG0qs" frameborder="0" allowfullscreen></iframe>
+				<p>В данном ролике рассматривается процесс создания презентации в разделе "Шаблоны"</p>
+				<a href="index.html#templates"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoScenarios">Cценарии</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/nmiV0eB4DNU" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеоролике демонстрируется процесс создания сценарной презентации.</p>
+				<a href="index.html#scenarios"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoUpload">Загрузка презентации в инструмент</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/o3WZvSwqjO0" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеоролике демонстрируется процесс загрузки файла презентации в инструмент.</p>
+				<a href="index.html#upload"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoExportPublishing">Экспорт и паблишинг</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/DLZkkh5734Q" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеоролике рассматривается процесс экспорта и публикации презентации в CLM-инструмен.</p>
+				<a href="index.html#editPublish"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoDemo">Обучающая презентация (Демо-режим)</h3>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/NSUetyc8rOg" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеоролике демонстрируется процесс создания обучающей презентации и добавления комментариев к ней.</p>
+				<a href="index.html#educational"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoLocalize">Локализация презентаций</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/P2nX4RRX-Z0" frameborder="0" allowfullscreen></iframe>
+				<p>В данном видеоролике демонстрируется процесс локализации презентации на другой язык.</p>
+				<a href="index.html#localization"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<article>
+				<h3 id="videoShare">Обмен презентациями (share)</h3>				
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/7QXeFhc_mNM" frameborder="0" allowfullscreen></iframe>
+				<p>Данный видеоролик демонстрирует процесс обмена презентациями.</p>
+				<a href="index.html#share"<p><b>&#171; Перейти к статье</b></p></a>
+			</article>
+			<a href="#header" class="back"><img src="images/arrow-up.png"> Назад к оглавлению</a>
 		</main>
 		<footer>
 			<p>©2012-2014. Все права защищены. (v.1.4.2.0)</p>
